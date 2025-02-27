@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"sn_cardflip",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":0.68873,
+  "name":"sn_cardflip",
+  "parent":{
+    "name":"Puzzle",
+    "path":"folders/Sounds/Puzzle.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"sn_cardflip.wav",
+  "type":1,
+  "volume":1.0,
+}
