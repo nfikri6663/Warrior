@@ -4,9 +4,9 @@ surface_resize(application_surface,_w,_h)
 if file_exists(filename){
 	var load = ds_map_secure_load(filename)
 	for(var i=0; i<100; i++){
-		var json_string = load[? "my_array"]
-		if json_string != []{
-			var retrieved_array = json_parse(json_string)
+		var json_strings = load[? "my_array"]
+		if json_strings != []{
+			var retrieved_array = json_parse(json_strings)
 			global.array_bag = retrieved_array
 			
 			var json_string = json_stringify(global.array_bag)

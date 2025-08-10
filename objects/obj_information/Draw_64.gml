@@ -1,5 +1,11 @@
 //Displays a notification if there is data taken from the database
+if room != rm_menu exit
 for (var i = 0; i < array_length(data); i++){
+    if data[i].text == "" || data[i].link == ""{
+        array_delete(data,i,1)
+        continue
+    }
+    
     _text = data[i].text
     _link = data[i].link
     

@@ -1,5 +1,5 @@
 //Retrieving all data from database
-if async_load[? "status"] == 200{
+if async_load[? "status"] == 200 && os_is_network_connected(){
     switch (async_load[? "type"]){
         case "FirebaseFirestore_Collection_Listener":
             FirebaseFirestore(root).Query()

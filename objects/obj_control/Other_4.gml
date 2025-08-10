@@ -74,10 +74,13 @@ switch room{
                 var obj = asset_get_index(global.array_bag[i])
 				var x_pos = start_x+(i mod 7)*spacing_x
 				var y_pos = start_y+(i div 7)*spacing_y
-				instance_create_layer(x_pos,y_pos,"Instances",obj)
+                if instance_exists(obj) continue
+                instance_create_layer(x_pos,y_pos,"Instances",obj)
+                if i == array_length(global.array_bag)-1{
+                    var clear = instance_create_layer(room_width/2,room_height-96,"Instances",obj_btn)
+                    clear.image_index = 3
+                }
 			}
-			var clear = instance_create_layer(room_width/2,room_height-96,"Instances",obj_btn)
-			clear.image_index = 3
 		}
 	break
 }

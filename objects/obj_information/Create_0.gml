@@ -1,4 +1,4 @@
-root = "information"                            //Replace with your database name
+root = "notification"                            //Replace with your database name
 listener = FirebaseFirestore(root).Listener()
 data = []
 
